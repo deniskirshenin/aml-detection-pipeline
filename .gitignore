@@ -1,0 +1,19 @@
+# Секреты и ключи
+.env
+
+# Виртуальное окружение Python
+venv/
+.venv/
+env/
+
+# Кэш Python
+__pycache__/
+*.pyc
+
+# dbt артефакты и логи
+aml_dbt/target/
+aml_dbt/dbt_packages/
+aml_dbt/logs/
+
+# Системные файлы macOS
+.DS_Store

@@ -1,0 +1,90 @@
+[0m19:44:39.930394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110739be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11206e710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11206e990>]}
+
+
+============================== 19:44:39.943179 | 1f20669d-d222-4b5f-9842-05e04a32acf1 ==============================
+[0m19:44:39.943179 [info ] [MainThread]: Running with dbt=1.12.5
+[0m19:44:39.944598 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'debug': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'invocation_command': 'dbt init aml_dbt', 'use_experimental_parser': 'False', 'log_path': 'logs', 'use_colors': 'True', 'printer_width': '80', 'target_path': 'None', 'log_cache_events': 'False', 'no_print': 'None', 'hints_enabled': 'True', 'quiet': 'False', 'partial_parse': 'True', 'empty': 'None', 'profiles_dir': '/Users/fish/.dbt', 'introspect': 'True', 'fail_fast': 'False'}
+[0m19:44:39.987275 [info ] [MainThread]: Creating dbt configuration folder at /Users/fish/.dbt
+[0m19:44:39.990491 [debug] [MainThread]: Starter project path: /Users/fish/aml-detection-pipeline/venv/lib/python3.14/site-packages/dbt/include/starter_project
+[0m19:44:40.006915 [info ] [MainThread]: Setting up your profile.
+[0m19:45:26.686351 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:45:26.688215 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:45:26.688994 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:47:06.664148 [info ] [MainThread]: Profile aml_dbt written to /Users/fish/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m19:47:06.688972 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m19:47:06.692487 [info ] [MainThread]: dbt version: 1.12.5
+[0m19:47:06.693193 [info ] [MainThread]: python version: 3.14.8
+[0m19:47:06.693635 [info ] [MainThread]: python path: /Users/fish/aml-detection-pipeline/venv/bin/python3.14
+[0m19:47:06.694114 [info ] [MainThread]: os info: macOS-15.7.9-x86_64-i386-64bit-Mach-O
+[0m19:47:06.823510 [info ] [MainThread]: Using profiles dir at /Users/fish/.dbt
+[0m19:47:06.824136 [info ] [MainThread]: Using profiles.yml file at /Users/fish/.dbt/profiles.yml
+[0m19:47:06.824558 [info ] [MainThread]: Using dbt_project.yml file at /Users/fish/aml-detection-pipeline/aml_dbt/dbt_project.yml
+[0m19:47:06.826699 [info ] [MainThread]: adapter type: snowflake
+[0m19:47:06.827289 [info ] [MainThread]: adapter version: 1.12.1
+[0m19:47:06.986345 [info ] [MainThread]: Configuration:
+[0m19:47:06.987043 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:47:06.987464 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:47:06.987864 [info ] [MainThread]: Required dependencies:
+[0m19:47:06.988533 [debug] [MainThread]: Executing "git --help"
+[0m19:47:07.159069 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c name=value]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   reset      Reset current HEAD to the specified state\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   branch     List, create, or delete branches\n   checkout   Switch branches or restore working tree files\n   commit     Record changes to the repository\n   diff       Show changes between commits, commit and working tree, etc\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\n""
+[0m19:47:07.161911 [debug] [MainThread]: STDERR: "b''"
+[0m19:47:07.162906 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:47:07.163818 [info ] [MainThread]: Connection:
+[0m19:47:07.164876 [info ] [MainThread]:   account: BOVQQGB-ZGB26589
+[0m19:47:07.165809 [info ] [MainThread]:   user: dkirshenin
+[0m19:47:07.166837 [info ] [MainThread]:   database: AML_DATABASE
+[0m19:47:07.167805 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m19:47:07.169925 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m19:47:07.171294 [info ] [MainThread]:   schema: STAGING
+[0m19:47:07.172027 [info ] [MainThread]:   authenticator: None
+[0m19:47:07.172662 [info ] [MainThread]:   oauth_client_id: None
+[0m19:47:07.173276 [info ] [MainThread]:   query_tag: None
+[0m19:47:07.173815 [info ] [MainThread]:   client_session_keep_alive: False
+[0m19:47:07.174291 [info ] [MainThread]:   host: None
+[0m19:47:07.174761 [info ] [MainThread]:   port: None
+[0m19:47:07.175226 [info ] [MainThread]:   proxy_host: None
+[0m19:47:07.175997 [info ] [MainThread]:   proxy_port: None
+[0m19:47:07.176700 [info ] [MainThread]:   protocol: None
+[0m19:47:07.178297 [info ] [MainThread]:   connect_retries: 1
+[0m19:47:07.179258 [info ] [MainThread]:   connect_timeout: None
+[0m19:47:07.179796 [info ] [MainThread]:   retry_on_database_errors: False
+[0m19:47:07.180262 [info ] [MainThread]:   retry_all: False
+[0m19:47:07.180716 [info ] [MainThread]:   insecure_mode: False
+[0m19:47:07.181168 [info ] [MainThread]:   reuse_connections: True
+[0m19:47:07.181637 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m19:47:07.182197 [info ] [MainThread]:   workload_identity_provider: None
+[0m19:47:07.182828 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m19:47:07.183629 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m19:47:07.192241 [info ] [MainThread]: Registered adapter: snowflake=1.12.1
+[0m19:47:07.408414 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m19:47:07.415259 [debug] [MainThread]: Using snowflake connection "debug"
+[0m19:47:07.415781 [debug] [MainThread]: On debug: select 1 as id
+[0m19:47:07.416268 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:47:09.297478 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.881 seconds
+[0m19:47:09.300072 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:47:09.300994 [info ] [MainThread]: [32mAll checks passed![0m
+[0m19:47:09.302417 [info ] [MainThread]: Your new dbt project "aml_dbt" was created!
+Initialized new project in /Users/fish/aml-detection-pipeline/aml_dbt/aml_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:47:09.358770 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 149.73305, "process_in_blocks": "0", "process_kernel_time": 1.135116, "process_mem_max_rss": "185937920", "process_out_blocks": "0", "process_user_time": 3.847389}
+[0m19:47:09.361728 [debug] [MainThread]: Command `dbt init` succeeded at 19:47:09.361343 after 149.74 seconds
+[0m19:47:09.362485 [debug] [MainThread]: Connection 'debug' was left open.
+[0m19:47:09.363015 [debug] [MainThread]: On debug: Close
+[0m19:47:10.167857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111ea6060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b41b9b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b4097b0>]}
+[0m19:47:10.169630 [debug] [MainThread]: Flushing usage events
+[0m19:47:10.824387 [debug] [MainThread]: An error was encountered while trying to flush usage events

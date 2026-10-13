@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: fct_transfers
+    description: "Факты блокчейн-транзакций с флагами AML-рисков."
+    columns:
+      - name: hash
+        description: "Хеш транзакции."
+        tests:
+          - not_null
+
+  - name: dim_addresses
+    description: "Измерения (профили) адресов кошельков с агрегированными объемами и метриками."
+    columns:
+      - name: address
+        description: "Ethereum адрес."
+        tests:
+          - unique
+          - not_null

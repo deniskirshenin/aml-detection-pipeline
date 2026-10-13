@@ -17,3 +17,6 @@ aml_dbt/logs/
 
 # Системные файлы macOS
 .DS_Store
+
+# duckdb файлы
+data/

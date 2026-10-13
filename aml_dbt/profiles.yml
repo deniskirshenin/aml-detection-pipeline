@@ -1,0 +1,7 @@
+aml_dbt:       # Название вашего проекта (должно совпадать с name в dbt_project.yml)
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../data/raw_data.duckdb   # Относительный путь от корня dbt-проекта к вашему файлу базы
+      threads: 4              # Количество потоков для параллельной сборки моделей

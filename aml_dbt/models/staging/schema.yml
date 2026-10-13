@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: raw_data
+    schema: main
+    tables:
+      - name: raw_alchemy_transfers
+        description: "Raw data from Alchemy API"

@@ -10,7 +10,7 @@ cleaned as (
         hash,
         fromAddress as from_address,
         toAddress as to_address,
-        value::numeric as value,
+        try_cast(value as double) as value,
         asset,
         category
     from source

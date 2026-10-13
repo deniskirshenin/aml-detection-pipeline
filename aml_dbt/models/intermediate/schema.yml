@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: int_address_transfers_unstacked
+    description: "Развернутый поток транзакций: каждая транзакция представлена в виде двух строк (IN и OUT) для каждого вовлеченного адреса."
+    columns:
+      - name: hash
+        description: "Хеш транзакции в блокчейне."
+        arguments:
+          tests:
+            - not_null
+      - name: address
+        description: "Адрес кошелька, для которого рассматривается транзакция."
+        arguments:
+          tests:
+            - not_null
+      - name: direction
+        description: "Направление движения средств относительно кошелька (INCOMING или OUTGOING)."
+        arguments:
+          tests:
+            - not_null
+            - accepted_values:
+                values: ['INCOMING', 'OUTGOING']
+
+  - name: int_address_summary
+    description: "Агрегированный профиль активности каждого адреса: общие объемы, количество транзакций и уникальные связи."
+    columns:
+      - name: address
+        description: "Ethereum адрес кошелька."
+        arguments:
+          tests:
+            - unique
+            - not_null
+      - name: num_transfers
+        description: "Общее количество транзакций, в которых участвовал адрес."
+        arguments:
+          tests:
+            - not_null
+      - name: num_counterparties
+        description: "Количество уникальных контрагентов (для поиска кластеров и миксеров)."
+        arguments:
+          tests:
+            - not_null
